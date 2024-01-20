@@ -25,7 +25,7 @@ export default function Navbar() {
                         <div className="collapse navbar-collapse bg-white" id="navbarCollapse">
                             <div className="navbar-nav mx-auto">
                                 <Link to="/"  className="nav-item nav-link active">Home</Link>
-                                <Link to="/category"  className="nav-item nav-link">Shop</Link>
+                                <Link to="/shop"  className="nav-item nav-link">Shop</Link>
                                 <Link to="/shop-details" className="nav-item nav-link">Shop Detail</Link>
                                 <div className="nav-item dropdown">
                                     <Link   className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Category</Link>
@@ -33,7 +33,7 @@ export default function Navbar() {
                                         <Link to="/cart"   className="dropdown-item">Cart</Link>
                                     </div>
                                 </div>
-                                <Link className="nav-item nav-link">Contact</Link>
+                                <Link to="/contact" className="nav-item nav-link">Contact</Link>
                             </div>
                             <div className="d-flex m-3 me-0">
                                 <button className="btn-search btn border border-secondary btn-md-square rounded-circle bg-white me-4" data-bs-toggle="modal" data-bs-target="#searchModal"><i className="fas fa-search text-primary"></i></button>
