@@ -69,10 +69,6 @@ const cartSlice = createSlice({
       state.data = tempCart;
       storeInLocalStorage(state.data);
     },
-    clearCart(state) {
-      state.data = [];
-      storeInLocalStorage(state.data);
-    },
     getCartTotal(state) {
       state.totalAmount = state.data.reduce((cartTotal, cartItem) => {
         return (cartTotal += cartItem.totalPrice);
@@ -82,11 +78,6 @@ const cartSlice = createSlice({
   },
 });
 
-export const {
-  addToCart,
-  removeItem,
-  getCartTotal,
-  clearCart,
-  updateQuantity,
-} = cartSlice.actions;
+export const { addToCart, removeItem, getCartTotal, updateQuantity } =
+  cartSlice.actions;
 export default cartSlice.reducer;
