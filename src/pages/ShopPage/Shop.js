@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { products } from "../../data/Data";
 import { useDispatch } from "react-redux";
 import { addToCart } from "../../store/cartSlice";
-import { useNavigate } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 
 export default function Shop() {
   const [qty, setQty] = useState(1);
@@ -25,12 +25,9 @@ export default function Shop() {
       <div class="container-fluid page-header py-5">
         <h1 class="text-center text-white display-6">Shop</h1>
         <ol class="breadcrumb justify-content-center mb-0">
-          <li class="breadcrumb-item">
+          <Link to="/" class="breadcrumb-item">
             <a href="#">Home</a>
-          </li>
-          <li class="breadcrumb-item">
-            <a href="#">Pages</a>
-          </li>
+          </Link>
           <li class="breadcrumb-item active text-white">Shop</li>
         </ol>
       </div>

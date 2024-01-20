@@ -30,7 +30,10 @@ export default function Navbar() {
                                 <div className="nav-item dropdown">
                                     <Link   className="nav-link dropdown-toggle" data-bs-toggle="dropdown">Category</Link>
                                     <div className="dropdown-menu m-0 bg-secondary rounded-0">
-                                        <Link to="/cart"   className="dropdown-item">Cart</Link>
+                                        <Link className="dropdown-item">Vegetables</Link>
+                                        <Link className="dropdown-item">Fruit</Link>
+                                        <Link className="dropdown-item">Bread</Link>
+                                        <Link className="dropdown-item">Meat</Link>
                                     </div>
                                 </div>
                                 <Link to="/contact" className="nav-item nav-link">Contact</Link>

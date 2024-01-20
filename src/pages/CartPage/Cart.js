@@ -5,6 +5,7 @@ import {
   removeItem,
   updateQuantity,
 } from "../../store/cartSlice";
+import { Link } from "react-router-dom";
 
 export default function Cart() {
   const increaseQty = (cartProductId, currentQty) => {
@@ -41,12 +42,9 @@ export default function Cart() {
       <div className="container-fluid page-header py-5">
         <h1 className="text-center text-white display-6">Cart</h1>
         <ol className="breadcrumb justify-content-center mb-0">
-          <li className="breadcrumb-item">
+          <Link sat to="/" className="breadcrumb-item">
             <a href="#">Home</a>
-          </li>
-          <li className="breadcrumb-item">
-            <a href="#">Pages</a>
-          </li>
+          </Link>
           <li className="breadcrumb-item active text-white">Cart</li>
         </ol>
       </div>
