@@ -45,6 +45,7 @@ export default function HomeSlide() {
                 className="carousel slide position-relative"
                 data-bs-ride="carousel"
               >
+                  
                 <div className="carousel-inner" role="listbox">
                   <Slider {...settings}>
                     {slids.map((val, index) => (
